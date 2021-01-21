@@ -1,4 +1,4 @@
-import Splashscreen from './Splashscreen';
+import Splash from './Splash';
 import GetStarted from './GetStarted';
 
-export { Splashscreen, GetStarted };
+export { Splash, GetStarted };

@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { ILLogo } from '../../assets';
 
-const Splashscreen = () => {
+const Splash = () => {
     return (
         <>
             <View style={styles.container}>
@@ -13,7 +13,7 @@ const Splashscreen = () => {
     )
 }
 
-export default Splashscreen;
+export default Splash;
 
 const styles = StyleSheet.create({
     container: {
