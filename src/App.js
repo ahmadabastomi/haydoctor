@@ -1,12 +1,12 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import React from 'react';
+import { GetStarted} from './pages';
 
-export default function App() {
+const App = () => {
   return (
-    <View>
-      <Text>Hello World</Text>
-    </View>
+    <>
+      <GetStarted />
+    </>
   )
 }
 
-const styles = StyleSheet.create({})
+export default App;
