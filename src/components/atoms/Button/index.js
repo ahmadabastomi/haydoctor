@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
     }),
     textButton: (type) => ({
         color: (type == 'secondary') ? '#112340' : 'white',
-        fontSize: 18
+        fontSize: 18,
+        fontFamily: 'Nunito-SemiBold'
     })
 })

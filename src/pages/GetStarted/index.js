@@ -38,7 +38,6 @@ const styles = StyleSheet.create({
     textInfo: {
         marginTop: 91,
         fontSize: 28,
-        fontWeight: '600',
         color: 'white',
         fontFamily: 'Nunito-SemiBold'
 
