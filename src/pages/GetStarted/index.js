@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, ImageBackground, ScrollView } from 'react-nativ
 import { ILBgGetStarted, ILLogo } from '../../assets';
 import { Button, SizedBox } from '../../components'
 
-const GetStarted = () => {
+const GetStarted = ({navigation}) => {
     return (
         <ImageBackground source={ILBgGetStarted} style={styles.background}>
             <View style={styles.container}>
@@ -12,9 +12,9 @@ const GetStarted = () => {
                     <Text style={styles.textInfo}>Konsultasi dengan dokter jadi lebih mudah & fleksibel</Text>
                 </View>
                 <View style={styles.buttonStyle}>
-                    <Button title='Get Started' />
+                    <Button title='Get Started' onPress={() => {navigation.navigate('SignUp')}}/>
                     <SizedBox height={16} />
-                    <Button type='secondary' title='Sign In' />
+                    <Button type='secondary' title='Sign In' onPress={() => {navigation.replace('SignIn')}}/>
                 </View>
             </View>
         </ImageBackground>
