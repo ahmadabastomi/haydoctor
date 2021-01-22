@@ -11,7 +11,7 @@ const SignIn = () => {
                 <Text style={styles.textSignIn}>Sign In Page</Text>
                 <InputField label='Username' />
                 <SizedBox height={24} />
-                <InputField label='Password' />
+                <InputField label='Password' type='password'/>
                 <SizedBox height={10} />
                 <FlatButton title='Forgot My Password' />
                 <SizedBox height={40} />
