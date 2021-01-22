@@ -13,7 +13,7 @@ export default Button
 
 const styles = StyleSheet.create({
     container: (type) => ({
-        width: 280,
+        width: '100%',
         height: 45,
         backgroundColor: (type == 'secondary') ? 'white' : '#0BCAD4',
         display: 'flex',
