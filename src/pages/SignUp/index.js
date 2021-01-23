@@ -1,14 +1,32 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { ScrollView, StyleSheet, Text, View } from 'react-native'
+import { Header, InputField, Button, SizedBox } from '../../components';
 
-const SignUp = () => {
+const SignUp = ({ navigation }) => {
     return (
-        <View>
-            <Text>Sign Up Page</Text>
-        </View>
+        <ScrollView>
+            <Header title='Daftar Akun' actionBack={() => navigation.goBack()} />
+            <View style={styles.content}>
+                <InputField label='Full Name' />
+                <SizedBox height={24} />
+                <InputField label='Pekerjaan' />
+                <SizedBox height={24} />
+                <InputField label='Email Adress' />
+                <SizedBox height={24} />
+                <InputField label='Password' type='password' />
+                <SizedBox height={40} />
+                <Button title='Continue' onPress={() => { }} />
+            </View>
+        </ScrollView>
     )
 }
 
 export default SignUp
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    content: {
+        paddingLeft: 40,
+        paddingRight: 40,
+        paddingBottom: 50
+    }
+})

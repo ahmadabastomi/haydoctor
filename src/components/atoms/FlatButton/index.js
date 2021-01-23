@@ -1,9 +1,9 @@
 import React from 'react'
 import { Pressable, StyleSheet, Text } from 'react-native'
 
-const FlatButton = ({ title, fontSize }) => {
+const FlatButton = ({ title, fontSize, action }) => {
     return (
-        <Pressable>
+        <Pressable onPress={action}>
             <Text style={styles.label(fontSize)}>{title != null ? title : 'Flatbutton'}</Text>
         </Pressable>
     )

@@ -3,7 +3,7 @@ import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { ILLogo } from '../../assets';
 import { InputField, SizedBox, FlatButton, Button } from '../../components';
 
-const SignIn = () => {
+const SignIn = ({navigation}) => {
     return (
         <ScrollView>
             <View style={styles.container}>
@@ -18,7 +18,10 @@ const SignIn = () => {
                 <Button title='Sign In' />
                 <SizedBox height={30} />
                 <View style={styles.centerVertical}>
-                    <FlatButton title='Create New Account' fontSize={16} />
+                    <FlatButton 
+                        title='Create New Account' 
+                        fontSize={16} 
+                        action={() => navigation.navigate('SignUp')}/>
                 </View>
                 <SizedBox height={50} />
             </View>
