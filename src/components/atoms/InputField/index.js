@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { StyleSheet, Text, TextInput, View } from 'react-native'
+import { colors, fonts } from '../../../utils';
 
 const InputField = ({ label, type }) => {
     const [focus, setFocus] = useState(false);
@@ -22,12 +23,12 @@ const styles = StyleSheet.create({
     inputStyle: (focus) => ({
         borderWidth: 1,
         borderRadius: 10,
-        borderColor: (focus) ? '#0066CB' : '#E9E9E9',
+        borderColor: (focus) ? colors.accentColor2 : colors.accentColor3,
     }),
     label: {
         marginBottom: 6,
         fontSize: 16,
-        fontFamily: 'Nunito-Regular',
-        color: '#7D8797'
+        fontFamily: fonts.primary[400],
+        color: colors.text.darkGrey
     }
 })

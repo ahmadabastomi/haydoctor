@@ -2,6 +2,7 @@ import React from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { ILLogo } from '../../assets';
 import { InputField, SizedBox, FlatButton, Button } from '../../components';
+import { fonts } from '../../utils';
 
 const SignIn = ({navigation}) => {
     return (
@@ -43,6 +44,6 @@ const styles = StyleSheet.create({
         marginTop: 40,
         marginBottom: 40,
         fontSize: 20,
-        fontFamily: 'Nunito-SemiBold'
+        fontFamily: fonts.primary[600]
     }
 });

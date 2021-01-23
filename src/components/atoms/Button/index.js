@@ -1,5 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, TouchableOpacity} from 'react-native'
+import {colors,fonts} from '../../../utils';
 
 const Button = ({ type, title,onPress }) => {
     return (
@@ -15,15 +16,15 @@ const styles = StyleSheet.create({
     container: (type) => ({
         width: '100%',
         height: 45,
-        backgroundColor: (type == 'secondary') ? 'white' : '#0BCAD4',
+        backgroundColor: (type == 'secondary') ? colors.button.secondary : colors.button.primary,
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: 10
     }),
     textButton: (type) => ({
-        color: (type == 'secondary') ? '#112340' : 'white',
+        color: (type == 'secondary') ? colors.text.dark : colors.text.white,
         fontSize: 18,
-        fontFamily: 'Nunito-SemiBold'
+        fontFamily: fonts.primary[600],
     })
 })

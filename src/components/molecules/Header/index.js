@@ -1,6 +1,7 @@
 import React from 'react'
 import { Pressable, StyleSheet, Text, View } from 'react-native'
 import { IconArrowback } from '../../../assets';
+import { colors } from '../../../utils';
 
 const Header = ({ title,actionBack }) => {
     return (
@@ -28,7 +29,7 @@ const styles = StyleSheet.create({
     textHeader: {
         fontSize: 20,
         fontFamily: 'Nonito-SemiBold',
-        color: '#112340',
+        color: colors.text.dark,
         textAlign: 'center',
         display: 'flex',
         flex: 1,
