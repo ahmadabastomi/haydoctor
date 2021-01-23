@@ -15,7 +15,7 @@ const SignUp = ({ navigation }) => {
                 <SizedBox height={24} />
                 <InputField label='Password' type='password' />
                 <SizedBox height={40} />
-                <Button title='Continue' onPress={() => { }} />
+                <Button title='Continue' onPress={() => navigation.navigate('UploadPhoto')} />
             </View>
         </ScrollView>
     )
