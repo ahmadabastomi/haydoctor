@@ -16,7 +16,7 @@ const SignIn = ({navigation}) => {
                 <SizedBox height={10} />
                 <FlatButton title='Forgot My Password' />
                 <SizedBox height={40} />
-                <Button title='Sign In' />
+                <Button title='Sign In' onPress={() => navigation.replace('MainApp')}/>
                 <SizedBox height={30} />
                 <View style={styles.centerVertical}>
                     <FlatButton 
