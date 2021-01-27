@@ -1,6 +1,6 @@
 # Hay Doctor Apps
 # Android & IOS
-(This apps still on progress developmen)
+(This apps still on progress development)<br/>
 Ticket movie theater apps using flutter
 This Apps Using Tech Stack:
 - React Native
