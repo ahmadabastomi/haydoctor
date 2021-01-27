@@ -6,6 +6,7 @@ const mainColors = {
     lightGrey: '#BEBEBE',
     softGrey: '#EDEEF0',
     hightLightBlue: '#0066CB',
+    veryLightBlue: '#EDFCFD',
     red: '#E06379',
     white: 'white',
     black: 'black',
@@ -19,6 +20,8 @@ export const colors = {
     accentColor2: mainColors.hightLightBlue,
     accentColor3: mainColors.lightGrey,
     accentColor4: mainColors.dark,
+    accentColor5: mainColors.veryLightBlue,
+    white: mainColors.white,
     text: {
         white: mainColors.white,
         dark: mainColors.dark,

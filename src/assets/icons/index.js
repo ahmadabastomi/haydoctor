@@ -5,6 +5,9 @@ import IconHospitalsActive from './ic-hospitals-active.svg';
 import IconDoctorsDeactive from './ic-doctors-deactive.svg';
 import IconMessagesDeactive from './ic-messages-deactive.svg';
 import IconHospitalsDeactive from './ic-hospitals-deactive.svg';
+import IconDoctorUmum from './ic-doctor-umum.svg';
+import IconDoctorPsikiater from './ic-doctor-psikiater.svg';
+import IconDoctorFarmasi from './ic-dokter-farmasi.svg';
 
 export {
     IconArrowback,
@@ -13,5 +16,8 @@ export {
     IconHospitalsActive,
     IconDoctorsDeactive,
     IconMessagesDeactive,
-    IconHospitalsDeactive
+    IconHospitalsDeactive,
+    IconDoctorUmum,
+    IconDoctorPsikiater,
+    IconDoctorFarmasi
 };
