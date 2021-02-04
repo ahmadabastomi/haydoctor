@@ -5,6 +5,7 @@ import UserProfile from './UserProfile';
 import CategoryCard from './CategoryCard';
 import DoctorRated from './DoctorRated';
 import NewsItem from './NewsItem';
+import UserMessage from './UserMessage';
 
 export {
     Header,
@@ -13,5 +14,6 @@ export {
     UserProfile,
     CategoryCard,
     DoctorRated,
-    NewsItem
+    NewsItem,
+    UserMessage
 };

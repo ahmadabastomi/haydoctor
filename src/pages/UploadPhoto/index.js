@@ -1,5 +1,5 @@
 import React from 'react'
-import { Image, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native'
+import { Image, Pressable, StatusBar, StyleSheet, Text, View } from 'react-native'
 import { ILBtnAddPhoto, ILLogo, ILUserPhotoNull } from '../../assets'
 import { Button, FlatButton, Header, SizedBox } from '../../components'
 import { colors, fonts } from '../../utils'
@@ -7,6 +7,7 @@ import { colors, fonts } from '../../utils'
 const UploadPhoto = ({ navigation }) => {
     return (
         <View style={styles.page}>
+            <StatusBar backgroundColor={colors.accentColor4} />
             <Header title='Upload Photo' actionBack={() => navigation.goBack()} />
             <View style={styles.container}>
                 <View style={styles.profileWrapper}>

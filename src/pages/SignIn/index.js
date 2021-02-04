@@ -1,12 +1,13 @@
 import React from 'react';
-import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, Text, View,StatusBar } from 'react-native';
 import { ILLogo } from '../../assets';
 import { InputField, SizedBox, FlatButton, Button } from '../../components';
-import { fonts } from '../../utils';
+import { fonts,colors } from '../../utils';
 
 const SignIn = ({navigation}) => {
     return (
         <ScrollView>
+            <StatusBar backgroundColor={colors.accentColor4} />
             <View style={styles.container}>
                 <ILLogo />
                 <Text style={styles.textSignIn}>Sign In Page</Text>

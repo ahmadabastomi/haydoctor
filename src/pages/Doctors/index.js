@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View,StatusBar } from 'react-native'
 import { ScrollView } from 'react-native-gesture-handler'
 import { DummyDoctor1, DummyDoctor2, DummyDoctor3, IconDoctorFarmasi, IconDoctorPsikiater, IconDoctorUmum } from '../../assets'
 import { CategoryCard, DoctorRated, NewsItem, SizedBox, UserProfile } from '../../components'
@@ -8,6 +8,7 @@ import { colors, fonts } from '../../utils'
 const Doctors = () => {
     return (
         <View style={styles.bgContainer}>
+            <StatusBar backgroundColor={colors.accentColor4} />
             <View style={styles.pages}>
                 <ScrollView showsVerticalScrollIndicator={false}>
                     <SizedBox height={16}/>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, ImageBackground, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, ImageBackground, StatusBar } from 'react-native';
 import { ILBgGetStarted, ILLogo } from '../../assets';
 import { Button, SizedBox } from '../../components'
 import { colors, fonts } from '../../utils';
@@ -7,6 +7,7 @@ import { colors, fonts } from '../../utils';
 const GetStarted = ({navigation}) => {
     return (
         <ImageBackground source={ILBgGetStarted} style={styles.background}>
+            <StatusBar backgroundColor={colors.accentColor4} />
             <View style={styles.container}>
                 <View>
                     <ILLogo />

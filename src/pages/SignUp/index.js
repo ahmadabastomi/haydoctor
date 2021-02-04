@@ -1,10 +1,12 @@
 import React from 'react'
-import { ScrollView, StyleSheet, Text, View } from 'react-native'
+import { ScrollView, StyleSheet, Text, View,StatusBar } from 'react-native'
 import { Header, InputField, Button, SizedBox } from '../../components';
+import { colors } from '../../utils';
 
 const SignUp = ({ navigation }) => {
     return (
         <ScrollView>
+            <StatusBar backgroundColor={colors.accentColor4} />
             <Header title='Daftar Akun' actionBack={() => navigation.goBack()} />
             <View style={styles.content}>
                 <InputField label='Full Name' />

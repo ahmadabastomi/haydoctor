@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     container: (type) => ({
         width: '100%',
         height: 45,
-        backgroundColor: (type == 'secondary') ? colors.button.secondary : colors.button.primary,
+        backgroundColor: (type == 'secondary') ? colors.button.secondary : colors.accentColor4,
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
