@@ -6,6 +6,7 @@ import CategoryCard from './CategoryCard';
 import DoctorRated from './DoctorRated';
 import NewsItem from './NewsItem';
 import UserMessage from './UserMessage';
+import HospitalItem from './HospitalItem';
 
 export {
     Header,
@@ -15,5 +16,6 @@ export {
     CategoryCard,
     DoctorRated,
     NewsItem,
-    UserMessage
+    UserMessage,
+    HospitalItem
 };
